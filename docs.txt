@@ -1,0 +1,9 @@
+https://gohugo.io/getting-started/quick-start/
+
+hugo new site quickstart
+cd quickstart
+git init
+git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
+git submodule add https://github.com/McShelby/hugo-theme-relearn.git themes/relearn
+echo "theme = 'ananke'" >> hugo.toml
+hugo server
